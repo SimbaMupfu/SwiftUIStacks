@@ -25,15 +25,25 @@ struct ContentView: View {
                         .font(.headline)
                         .foregroundColor(.white)
                 }
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 100)
                 .padding(40)
                 .background(Color.blue)
                 .cornerRadius(10)
                 VStack{
                     Text("Pro")
+                        .font(.system(.title, design: .rounded))
+                        .fontWeight(.black)
                     Text("$19")
+                        .font(.system(size: 40, weight: .heavy, design: .rounded))
                     Text("per month")
+                        .font(.headline)
                 }
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 100)
+                .padding(40)
+                .background(Color.orange)
+                .cornerRadius(10)
             }
+            .padding(.horizontal)
         }
     }
 }
